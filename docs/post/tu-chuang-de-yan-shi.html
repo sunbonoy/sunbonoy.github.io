@@ -76,7 +76,16 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div class="markdown-body" id="postBody"><h3>图床功能测试</h3>
 <p>本来想搭建一个图传，觉得自己需要使用的量不高，免费的可以先试试，于是就有下面这张图。</p>
-<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/06928b72f20e1b3f5ed29c85f834c176683b51b7f2d34e9e84971cf089d10630/68747470733a2f2f696d2e6775726c2e65752e6f72672f66696c652f6334386433353037313039353164346330353162302e6a7067"><img src="https://camo.githubusercontent.com/06928b72f20e1b3f5ed29c85f834c176683b51b7f2d34e9e84971cf089d10630/68747470733a2f2f696d2e6775726c2e65752e6f72672f66696c652f6334386433353037313039353164346330353162302e6a7067" alt="海边的风车" title="风景" data-canonical-src="https://im.gurl.eu.org/file/c48d350710951d4c051b0.jpg" style="max-width: 100%;"></a></p></div>
+<ul>
+<li>这张图是用markdown语法直接调用图床图片联接地址，CODE如下。图片还在github里处理后才展示出来，并不是直接链接到图片地址。<br>
+<code class="notranslate">![海边的风车](https://im.gurl.eu.org/file/c48d350710951d4c051b0.jpg "风景")</code></li>
+</ul>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/06928b72f20e1b3f5ed29c85f834c176683b51b7f2d34e9e84971cf089d10630/68747470733a2f2f696d2e6775726c2e65752e6f72672f66696c652f6334386433353037313039353164346330353162302e6a7067"><img src="https://camo.githubusercontent.com/06928b72f20e1b3f5ed29c85f834c176683b51b7f2d34e9e84971cf089d10630/68747470733a2f2f696d2e6775726c2e65752e6f72672f66696c652f6334386433353037313039353164346330353162302e6a7067" alt="海边的风车" title="风景" data-canonical-src="https://im.gurl.eu.org/file/c48d350710951d4c051b0.jpg" style="max-width: 100%;"></a></p>
+<ul>
+<li>这次使用内嵌HTML的方法，CODE如下。图片能够正常显示，并且标题也有。<br>
+<code class="notranslate">海边的风车&lt;img src="https://im.gurl.eu.org/file/c48d350710951d4c051b0.jpg"&gt;</code></li>
+</ul>
+<p>海边的风车<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/06928b72f20e1b3f5ed29c85f834c176683b51b7f2d34e9e84971cf089d10630/68747470733a2f2f696d2e6775726c2e65752e6f72672f66696c652f6334386433353037313039353164346330353162302e6a7067"><img src="https://camo.githubusercontent.com/06928b72f20e1b3f5ed29c85f834c176683b51b7f2d34e9e84971cf089d10630/68747470733a2f2f696d2e6775726c2e65752e6f72672f66696c652f6334386433353037313039353164346330353162302e6a7067" data-canonical-src="https://im.gurl.eu.org/file/c48d350710951d4c051b0.jpg" style="max-width: 100%;"></a></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
