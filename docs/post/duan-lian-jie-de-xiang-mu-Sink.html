@@ -44,7 +44,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     .postTitle{font-size:24px;}
 }
 </style>
-<style>#postBody{font-size:20px}</style>
+<style>#postBody{font-size:20px}</style><style>.markdown-alert{padding:0.5rem 1rem;margin-bottom:1rem;border-left:.25em solid var(--borderColor-default,var(--color-border-default));}.markdown-alert .markdown-alert-title {display:flex;font-weight:var(--base-text-weight-medium,500);align-items:center;line-height:1;}.markdown-alert>:first-child {margin-top:0;}.markdown-alert>:last-child {margin-bottom:0;}</style><style>.markdown-alert.markdown-alert-note {border-left-color:var(--borderColor-accent-emphasis, var(--color-accent-emphasis));background-color:var(--color-accent-subtle);}.markdown-alert.markdown-alert-note .markdown-alert-title {color: var(--fgColor-accent,var(--color-accent-fg));}</style><style>.markdown-alert.markdown-alert-tip {border-left-color:var(--borderColor-success-emphasis, var(--color-success-emphasis));background-color:var(--color-success-subtle);}.markdown-alert.markdown-alert-tip .markdown-alert-title {color: var(--fgColor-success,var(--color-success-fg));}</style>
 
 
 
@@ -82,16 +82,22 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/sunbonoy/sunbonoy.github.io/assets/169503861/5b9c589f-58c9-4b9c-9159-8d82ff574d5a"><img src="https://github.com/sunbonoy/sunbonoy.github.io/assets/169503861/5b9c589f-58c9-4b9c-9159-8d82ff574d5a" alt="sink1" style="max-width: 100%;"></a><br>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/sunbonoy/sunbonoy.github.io/assets/169503861/46c046c3-f02d-40c7-9ae6-646c96ab7186"><img src="https://github.com/sunbonoy/sunbonoy.github.io/assets/169503861/46c046c3-f02d-40c7-9ae6-646c96ab7186" alt="sink2" style="max-width: 100%;"></a><br>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/sunbonoy/sunbonoy.github.io/assets/169503861/48ef9910-8f64-43ca-822e-7c8c99990bfe"><img src="https://github.com/sunbonoy/sunbonoy.github.io/assets/169503861/48ef9910-8f64-43ca-822e-7c8c99990bfe" alt="sink3" style="max-width: 100%;"></a></p>
-<h4>Note: 部署中的一些注意</h4>
-<ul>
-<li>CF新建pages时候，需要选择Nuxt.js的框架，这个是必须的。</li>
-<li>三个环境标量需要先添加后再保存部署。</li>
-<li>部署一定要先取消，然后去绑定KV变量，AI变量，启动ANALYTICS Engine并绑定变量，完全按照说明文档。第一次我在搭建时候把这几个变量功能在前面部署后再增加的，数据统计功能就没法生效。</li>
-</ul>
+<div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<ol>
+<li>
+<p>CF新建pages时候，需要选择Nuxt.js的框架，这个是必须的。</p>
+</li>
+<li>
+<p>三个环境标量需要先添加后再保存部署。</p>
+</li>
+<li>
+<p>部署一定要先取消，然后去绑定KV变量，AI变量，启动ANALYTICS Engine并绑定变量，完全按照说明文档。第一次我在搭建时候把这几个变量功能在前面部署后再增加的，数据统计功能就没法生效。</p>
+</li>
+</ol>
+</div>
 <p>整体上还是很喜欢这个项目，只是Home页面没法修改，但能换成自己的博客主页。其它都很好，短链接生成还支持到期时间定义。</p>
-<blockquote>
-<p>项目的<a href="https://sink.cool/" rel="nofollow">Demo版</a>，大家可以访问试用。</p>
-</blockquote></div>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p>项目的<a href="https://sink.cool/" rel="nofollow">Demo版</a>，大家可以访问试用。</p>
+</div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>

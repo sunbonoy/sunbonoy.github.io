@@ -8,12 +8,16 @@
 ![sink2](https://github.com/sunbonoy/sunbonoy.github.io/assets/169503861/46c046c3-f02d-40c7-9ae6-646c96ab7186)
 ![sink3](https://github.com/sunbonoy/sunbonoy.github.io/assets/169503861/48ef9910-8f64-43ca-822e-7c8c99990bfe)
 
-#### Note: 部署中的一些注意
-
-- CF新建pages时候，需要选择Nuxt.js的框架，这个是必须的。
-- 三个环境标量需要先添加后再保存部署。
-- 部署一定要先取消，然后去绑定KV变量，AI变量，启动ANALYTICS Engine并绑定变量，完全按照说明文档。第一次我在搭建时候把这几个变量功能在前面部署后再增加的，数据统计功能就没法生效。
+> [!NOTE]
+> 
+> 1. CF新建pages时候，需要选择Nuxt.js的框架，这个是必须的。
+> 
+> 2. 三个环境标量需要先添加后再保存部署。
+> 
+> 3. 部署一定要先取消，然后去绑定KV变量，AI变量，启动ANALYTICS Engine并绑定变量，完全按照说明文档。第一次我在搭建时候把这几个变量功能在前面部署后再增加的，数据统计功能就没法生效。
 
 整体上还是很喜欢这个项目，只是Home页面没法修改，但能换成自己的博客主页。其它都很好，短链接生成还支持到期时间定义。
 
+> [!TIP]
 > 项目的[Demo版](https://sink.cool/)，大家可以访问试用。
+
