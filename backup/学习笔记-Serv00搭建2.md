@@ -1,4 +1,3 @@
-
 继续介绍在Serv00上Cloudflared隧道的搭建和使用。
 
 ## 搭建Cloudflared
@@ -25,4 +24,4 @@ screen -d -m ./cloudflared tunnel --edge-ip-version auto --protocol http2 --hear
 
 - 隧道正常工作后，显示绿色的HEALTHY。可以使用隧道域名访问了，比如alist。
   
-- 不要使用pm2进程管理，很快就被清除，用screen是好的选择，也方便做自动进程监控并重启。
+- Cloudflared隧道很有用，很多项目的访问都能使用隧道，当然也包括机场节点，建议搭建准备一下。
