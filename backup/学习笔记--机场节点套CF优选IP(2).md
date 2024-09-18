@@ -25,12 +25,13 @@
   
 3. Field选择"hostname"，Operator选择"equals"，Value填入DNS解析过的域名。
   
-4. 目标端口填入节点的端口，保存完成规则设置。
+4. 目标端口填入节点的端口，保存完成规则设置，如图示。
+![pic-1](https://oss.761226.xyz/Pictures/web/cf-125034.png)
   
-5. 左侧菜单栏选择 >>"SSL/TLS" >>"edge certificates"。
+6. 左侧菜单栏选择 >>"SSL/TLS" >>"edge certificates"。
   
-6. "Always Use HTTPS"选项需要关闭，如果需要使用优选IP的80端口连接。
-  
+7. "Always Use HTTPS"选项需要关闭，如图示，如果需要使用优选IP的80端口连接。
+![pic-1](https://oss.761226.xyz/Pictures/web/cf-102046.png)
 
 ## 套用CF优选IP
 
