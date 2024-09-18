@@ -1,5 +1,4 @@
-
-> [Tip]
+> [!Tip]
 > 
 > 原文内容来自Projec X项目中“[小小白白话文—【安全防护篇】](https://xtls.github.io/document/level-0/ch04-security.html#_4-1-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%81%9A%E5%AE%89%E5%85%A8%E9%98%B2%E6%8A%A4)”，修改SSH访问端口很有用。
 
