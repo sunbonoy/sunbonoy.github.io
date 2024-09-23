@@ -41,5 +41,5 @@ WARP是Cloudflare提供一个代理软件，基于Wireguard协议的隧道连接
 >   
 > 2. 需要WARP+的，可以添加密钥到账户内，就有用不完的流量。密钥的生成请自行网络搜索。
 >   
-> 3. Zero Trust也是可以用的，需要登陆CF网站，在Zero Trust设置里开启"MASQUE`"，客户端直接登录Zero Trust账号即可。
+> 3. Zero Trust也是可以用的，需要先登陆CF网站，在Zero Trust设置里开启"MASQUE`"，客户端登录Zero Trust账号，注意Zero Trust账户认证需要在连接外网条件下才能完成。
 >
