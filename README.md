@@ -1,5 +1,5 @@
 # Boblog :link: https://boblog.us.kg 
-### :page_facing_up: [21](https://boblog.us.kg/tag.html) 
+### :page_facing_up: [21](https://boblog.761226.xyz/tag.html) 
 ### :speech_balloon: 4 
 ### :hibiscus: 18498 
 ### :alarm_clock: 2024-09-29 10:47:36 
