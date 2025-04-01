@@ -1,4 +1,4 @@
-# Boblog :link: https://boblog.us.kg 
+# Boblog :link: https://boblog.761226.xyz 
 ### :page_facing_up: [21](https://boblog.761226.xyz/tag.html) 
 ### :speech_balloon: 4 
 ### :hibiscus: 18498 
