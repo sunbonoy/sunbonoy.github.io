@@ -86,7 +86,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
     <div id="content">
 <div class="markdown-body" id="postBody"><h1>使用immich组建家庭云相册</h1>
-<p>家庭NAS系统可以方便的存储照片，并实现共享，方便各个终端的访问。这方面的方案和工具很多，最终我选择了immich，不管是搭建，使用和app都很让人满意，十分推荐使用。<br>
+<p>家庭NAS系统可以方便的存储照片，并实现共享，方便各个终端的访问。这方面的方案和工具很多，最终我选择了immich，不管是搭建，使用和app都很让人满意，十分推荐使用👍。<br>
 主要介绍一下如何搭建和使用，以及一些需要避开的坑和注意事宜。</p>
 <h2><strong>Immich</strong></h2>
 <p>Immich是一款基于开源技术的私有云相册管理工具，旨在提供快速、自动化的照片和视频备份功能。</p>
@@ -96,7 +96,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </ul>
 <h2><strong>Docker-compose安装 Immich</strong></h2>
 <ol>
-<li>建立目录，下载配置文件</li>
+<li>建立目录，下载官方的配置文件（文件目录并不需要创建在root下，可以在用户目录下）</li>
 </ol>
 <pre class="notranslate"><code class="notranslate">mkdir immich
 cd immich
@@ -106,7 +106,7 @@ wget -O .env https://github.com/immich-app/immich/releases/latest/download/examp
 <ol start="2">
 <li>
 <p>编辑.env文件<br>
-执行<code class="notranslate">sudo vim .env</code>，如下的配置内容可修改<br>
+执行<code class="notranslate">sudo vim .env</code>，参照如下的配置内容<br>
 UPLOAD_LOCATION=./library<br>
 TZ=Asia/Shanghai<br>
 DB_USERNAME=postgres # 用户名可修改<br>
@@ -139,15 +139,15 @@ DB_PASSWORD=postgres # 密码可修改</p>
 </ul>
 <div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
 <ul>
-<li>immich的docker镜像库是github的，pull的时候会很慢，如果有加速地址请自行加上。</li>
+<li>immich的docker镜像库是在github，pull的时候会很慢，如果有加速地址请自行加上。</li>
 <li>.env和docker-compose.yml文件内的其他内容不要修改，都是官方默认设置就好。</li>
 <li></li>
 </ul>
 </div>
 <h2><strong>加载自己的图片相册并识别</strong></h2>
 <ul>
-<li>配置文件内写入的图片存储目录<code class="notranslate">/home/user/Pic</code>就是外部目录，在immich界面右上角点击用户图标，选择“系统设置”，再选择“外部图库”栏，设置外部图库的地址为<code class="notranslate">/home/user/Pic</code>。</li>
-<li>然后拷贝自己的图片到这个目录即可，整个图片目录拷贝也可以，immich可以扫描子目录的。</li>
+<li>配置文件内写入的图片存储目录<code class="notranslate">/home/user/Pic</code>就是外部图库目录，在immich界面右上角点击用户图标，选择“系统设置”，再选择“外部图库”栏，设置外部图库的地址为<code class="notranslate">/home/user/Pic</code>。</li>
+<li>然后拷贝自己的图片到这个目录即可，整个图片文件夹拷贝也可以，immich可以扫描子目录的。</li>
 <li>界面上选择“任务”栏，找到“外部图库”任务，点击重新扫描，马上会开始扫描目录内的图片了。</li>
 <li>正常扫描图片后，智能搜索和人脸检测的功能也会开始，如果没开始，在任务栏这里，找到这些任务，点击启动。</li>
 <li>任务执行完成，图片就完全被加载了，在首页可以看到自己的图片了。</li>
@@ -155,13 +155,13 @@ DB_PASSWORD=postgres # 密码可修改</p>
 <div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
 <ul>
 <li>智能搜索和人脸识别的功能需要下载AI模型，默认是从huggingface下载，但国内访问不佳，是无法正常下载模型的，导致功能失效。</li>
-<li>解决办法是，需要科学上网，然后到这个网址<a href="https://huggingface.co/immich-app" rel="nofollow">huggingface.co/immich-app</a>，找到需要AI模型。
+<li>解决办法是，需要科学上网，然后到这个网址<a href="https://huggingface.co/immich-app" rel="nofollow">huggingface.co/immich-app</a>，找到需要的AI模型。
 <ul>
 <li>智能搜索的模型名称是：ViT-B-32__openai</li>
 <li>人脸识别的模型名称是：buffalo_l</li>
 </ul>
 </li>
-<li>进入AI模型的页面，拷贝网页地址，用<code class="notranslate">git clone</code>指令下载模型到本地，两个模型都需要，可以直接用下面指令。</li>
+<li>AI模型的页面，拷贝网页地址，用<code class="notranslate">git clone</code>指令下载模型到本地，两个模型都需要，可以直接用下面指令。</li>
 </ul>
 <pre class="notranslate"><code class="notranslate">git clone https://huggingface.co/immich-app/ViT-B-32__openai
 git clone https://huggingface.co/immich-app/buffalo_l
