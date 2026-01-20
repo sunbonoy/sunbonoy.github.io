@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     
-    <link rel="icon" href="https://boblog.dpdns.org/clover.svg"><script>
+    <link rel="icon" href="https://boblog.qzz.io/clover.svg"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
@@ -16,8 +16,8 @@
 <meta property="og:description" content="
 这次介绍网址搭建，Serv00已经配置网站运行环境，数据库，安装Wordpress就可以方便的创建网站了。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://boblog.dpdns.org/post/xue-xi-bi-ji--Serv00-da-jian-3.html">
-<meta property="og:image" content="https://boblog.dpdns.org/clover.svg">
+<meta property="og:url" content="https://boblog.qzz.io/post/xue-xi-bi-ji--Serv00-da-jian-3.html">
+<meta property="og:image" content="https://boblog.qzz.io/clover.svg">
 <title>学习笔记-Serv00搭建3</title>
 
 
@@ -63,7 +63,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="header">
 <h1 class="postTitle">学习笔记-Serv00搭建3</h1>
 <div class="title-right">
-    <a href="https://boblog.dpdns.org" id="buttonHome" class="btn btn-invisible circle" title="首页">
+    <a href="https://boblog.qzz.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
             <path id="pathHome" fill-rule="evenodd"></path>
         </svg>
@@ -96,15 +96,15 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </li>
 <li>
 <p>再到Serv00提供的服务面板里，添加自定义域名，选择php，如图示。<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/a1cd35df2786ab8685ea5ecb04578d9b6eef9dc14c4dd06329c404a5eb4519e2/68747470733a2f2f696d672e3736313232362e78797a2f66696c652f3563356462643038316532386366343362356637342e706e67"><img src="https://camo.githubusercontent.com/a1cd35df2786ab8685ea5ecb04578d9b6eef9dc14c4dd06329c404a5eb4519e2/68747470733a2f2f696d672e3736313232362e78797a2f66696c652f3563356462643038316532386366343362356637342e706e67" alt="fig-1" data-canonical-src="https://img.761226.xyz/file/5c5dbd081e28cf43b5f74.png" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/b129682c2eca680b787f513ad57a689333bcf6f40ed3e04d42d87b793d616995/68747470733a2f2f696d672e3736313232362e78797a2f66696c652f3563356462643038316532386366343362356637342e706e67"><img src="https://camo.githubusercontent.com/b129682c2eca680b787f513ad57a689333bcf6f40ed3e04d42d87b793d616995/68747470733a2f2f696d672e3736313232362e78797a2f66696c652f3563356462643038316532386366343362356637342e706e67" alt="fig-1" data-canonical-src="https://img.761226.xyz/file/5c5dbd081e28cf43b5f74.png" style="max-width: 100%;"></a></p>
 </li>
 <li>
 <p>继续在面板里找到SSL证书服务，选择一个IP地址，给刚添加的域名申请SSL证书，使用生成证书的选项，一会儿就会完成，如图示。<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/08cd5e3da6e7dadf599c79003bee2eb209f88cf1ea43e0424f97a3ee56cfca20/68747470733a2f2f696d672e3736313232362e78797a2f66696c652f3132336136356163363162333562343331613533302e706e67"><img src="https://camo.githubusercontent.com/08cd5e3da6e7dadf599c79003bee2eb209f88cf1ea43e0424f97a3ee56cfca20/68747470733a2f2f696d672e3736313232362e78797a2f66696c652f3132336136356163363162333562343331613533302e706e67" alt="fig-2" data-canonical-src="https://img.761226.xyz/file/123a65ac61b35b431a530.png" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/5f118ebf773b7a5a8f40fc829da2921d998cd585e3f436bc0a110052521d8e4c/68747470733a2f2f696d672e3736313232362e78797a2f66696c652f3132336136356163363162333562343331613533302e706e67"><img src="https://camo.githubusercontent.com/5f118ebf773b7a5a8f40fc829da2921d998cd585e3f436bc0a110052521d8e4c/68747470733a2f2f696d672e3736313232362e78797a2f66696c652f3132336136356163363162333562343331613533302e706e67" alt="fig-2" data-canonical-src="https://img.761226.xyz/file/123a65ac61b35b431a530.png" style="max-width: 100%;"></a></p>
 </li>
 <li>
 <p>创建数据库，在MySQL里面，添加名称，用户名和密码，需要记录下来，后面用到，如图示。<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/de96bdfeaeea37248e7840f490d701352bf636044e4cb0202633a8b430a3c5e9/68747470733a2f2f696d672e3736313232362e78797a2f66696c652f3538313136313161393065636463663031666231312e706e67"><img src="https://camo.githubusercontent.com/de96bdfeaeea37248e7840f490d701352bf636044e4cb0202633a8b430a3c5e9/68747470733a2f2f696d672e3736313232362e78797a2f66696c652f3538313136313161393065636463663031666231312e706e67" alt="fig-3" data-canonical-src="https://img.761226.xyz/file/5811611a90ecdcf01fb11.png" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/3d25f8fd4159e9ced1a93a07d7a924bc966e25ed80ac783b22f04d3c14673ef6/68747470733a2f2f696d672e3736313232362e78797a2f66696c652f3538313136313161393065636463663031666231312e706e67"><img src="https://camo.githubusercontent.com/3d25f8fd4159e9ced1a93a07d7a924bc966e25ed80ac783b22f04d3c14673ef6/68747470733a2f2f696d672e3736313232362e78797a2f66696c652f3538313136313161393065636463663031666231312e706e67" alt="fig-3" data-canonical-src="https://img.761226.xyz/file/5811611a90ecdcf01fb11.png" style="max-width: 100%;"></a></p>
 </li>
 <li>
 <p>下载wordpress安装包到服务器里，可以使用官方文档的指令，进入域名生成的目录内再执行指令。中文版可以改个下载地址，代码示例：</p>
@@ -129,7 +129,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <div class="comments" id="comments"></div>
 
 </div>
-    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://boblog.dpdns.org">Boblog</a></div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://boblog.qzz.io">Boblog</a></div>
 <div id="footer2">
     <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
 </div>
